@@ -8,6 +8,8 @@
 **Longinus-02** 是一个基于 Flutter 的个人开发脚手架与功能展示项目 (Showcase)。
 致敬 **EVA Unit-02** 与 **Longinus Spear**，旨在打造一把开发利器。
 
+📖 **[开发文档与规范](./docs/)** | 🗺️ **[项目路线图](./docs/ROADMAP.md)**
+
 ## 🏗 Project Structure
 
 本项目采用 **Feature-First + Atomic Design** 混合架构：
