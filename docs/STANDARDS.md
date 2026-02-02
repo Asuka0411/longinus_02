@@ -46,8 +46,10 @@
 * **格式要求**：
   * 每次回复开头必须包含模型信息（名称、版本）。
   * 使用结构化的 Markdown 格式。
-* **固定指令**：
+* **固定指令与锚点 (Anchoring)**：
+  * **上下文锚定**：为了防止思考过程漂移（如变回英文），**必须**在每次思考（Thought）的开头或结尾，以及回复（Response）中，显式称呼用户代号 **"Asuka"**。
   * 任务开始时明确：`Implementation Plan, Task List and Thought in Chinese`。
+  * **Global 级优先级**：此规则具有最高优先级，旨在确保 Model 始终读取到该指令，维持 Persona 稳定性。
 
 ## 4. 技术栈与编码规范 (Tech Stack)
 
