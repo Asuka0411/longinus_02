@@ -64,3 +64,31 @@
 * **轻量化管理**：
   * 使用 `docs/ROADMAP.md` 追踪长期目标。
   * AI 内部使用 `task.md` 追踪短期执行步骤。
+
+## 6. Git 开发规范 (Git Standards)
+
+* **元数据屏蔽 (Strict No-Metadata Policy)**
+  * 提交信息必须 **纯净**。
+  * **严禁** 包含 AI 模型名称、版本信息、思考过程或任何非业务相关的元数据。
+
+* **Commit Message 格式**
+  * 遵循 [Conventional Commits](https://www.conventionalcommits.org/) 标准。
+  * **Header (英文)**: `<type>(<scope>): <subject>`
+  * **Body (中文)**: 详细说明变更原因和内容。
+
+* **Type 类型定义**
+  * `feat`: 新功能 (Features)
+  * `fix`: 修补 Bug (Bug Fixes)
+  * `docs`: 文档变更 (Documentation)
+  * `style`: 代码格式调整 (Styles)
+  * `refactor`: 重构 (Code Refactoring)
+  * `test`: 测试用例 (Tests)
+  * `chore`: 构建过程或辅助工具变动 (Chores)
+
+* **示例 (Example)**
+
+    ```text
+    feat(auth): add google sign-in support
+
+    集成 Google 登录 SDK，完成基础配置与回调处理。
+    ```
