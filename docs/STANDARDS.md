@@ -54,12 +54,15 @@
 ## 4. 技术栈与编码规范 (Tech Stack)
 
 * **框架**：Flutter (Dart)
+* **状态管理**：Riverpod
+* **路由**：go_router (模块化设计)
 * **代码风格**：
   * 遵循 [Dart 官方风格指南](https://dart.dev/guides/language/effective-dart) 及 `analysis_options.yaml` 配置。
   * 注重代码可读性，命名应准确清晰。
 * **文档**：
   * 关键逻辑必须包含中文注释。
   * 文档优先（Docs as Code），变更代码前同步更新文档。
+* **架构详情**：参见 [ARCHITECTURE.md](./ARCHITECTURE.md)
 
 ## 5. 项目管理 (Project Management)
 
