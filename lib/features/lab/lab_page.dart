@@ -4,6 +4,7 @@ library;
 import 'package:flutter/material.dart';
 
 import '../../core/constants/app_colors.dart';
+import 'snake/snake_game_widget.dart';
 
 /// 试验场页面
 /// 展示进行中的实验和可运行 Demo
@@ -46,6 +47,8 @@ class LabPage extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             sliver: SliverList(
               delegate: SliverChildListDelegate([
+                const SnakeGameWidget(),
+                const SizedBox(height: 12),
                 _ExperimentCard(
                   title: 'HTTP 客户端对比',
                   description: '对比 dio、http、chopper 等 HTTP 客户端库的性能与易用性',
@@ -71,13 +74,6 @@ class LabPage extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
-        backgroundColor: AppColors.primary,
-        foregroundColor: Colors.white,
-        icon: const Icon(Icons.add_rounded),
-        label: const Text('新建实验'),
       ),
     );
   }
